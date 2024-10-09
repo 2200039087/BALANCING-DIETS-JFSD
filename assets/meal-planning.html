@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Planning Module</title>
+    <style>/* General styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f7f8;
+        }
+        
+        /* Header styles */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        .nav-links {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        
+        .nav-links li {
+            margin: 0 15px;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        /* Section styles */
+        section {
+            padding: 2rem;
+        }
+        
+        form {
+            max-width: 400px;
+            margin: auto;
+            padding: 1rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        form label, form input, form button {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+        }
+        
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+        
+        /* Table styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        
+        th {
+            background-color: #4CAF50;
+            color: white;
+            text-align: left;
+        }
+        
+        td {
+            text-align: left;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <h1>Meal Planning Module</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Create Your Meal Plan</h2>
+        <form id="meal-plan-form">
+            <label for="meal-date">Date:</label>
+            <input type="date" id="meal-date" name="meal-date" required>
+
+            <label for="meal-type">Meal Type:</label>
+            <select id="meal-type" name="meal-type" required>
+                <option value="breakfast">Breakfast</option>
+                <option value="lunch">Lunch</option>
+                <option value="dinner">Dinner</option>
+                <option value="snack">Snack</option>
+            </select>
+
+            <label for="meal-name">Meal Name:</label>
+            <input type="text" id="meal-name" name="meal-name" required>
+
+            <label for="meal-recipe">Recipe:</label>
+            <textarea id="meal-recipe" name="meal-recipe" rows="4" required></textarea>
+
+            <button type="submit">Add Meal Plan</button>
+        </form>
+
+        <h2>Your Meal Plans</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Meal Type</th>
+                    <th>Meal Name</th>
+                    <th>Recipe</th>
+                </tr>
+            </thead>
+            <tbody id="meal-plan-body">
+                <!-- Meal plans will be added here dynamically -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="meal-planning.js"></script>
+</body>
+</html>

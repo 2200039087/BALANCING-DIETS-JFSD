@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutirMinds| Home</title>
+    <style>/* General styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f7f8;
+            background-image: url('backgroundimage.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        /* Header styles */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        .nav-links {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        
+        .nav-links li {
+            margin: 0 15px;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        /* Section styles */
+        section {
+            padding: 2rem;
+        }
+        
+        form {
+            max-width: 400px;
+            margin: auto;
+            padding: 1rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        form label, form input, form button {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+        }
+        
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+        
+        /* Table styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        
+        th {
+            background-color: #4CAF50;
+            color: white;
+            text-align: left;
+        }
+        
+        td {
+            text-align: left;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        logo{
+            <img src="assets/images/logo.png" alt="NutirMinds"> 
+        }
+        </style>
+    
+
+</head>
+<body>
+    
+    <!-- Header with Navigation -->
+    <header>
+        <div class="logo"><h3>NutriMinds</h3></div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="dietary_data.html">Dietary Data Management</a></li>
+            <li><a href="health-monitoring.html">Health Monitoring</a></li>
+            <li><a href="meal-planning.html">Meal Planning</a></li>
+        </ul>
+    </header>
+
+    <!-- Main Section -->
+    <section class="main-section">
+        <div class="content-box">
+            <h1>Track Your Health</h1>
+            <h2>Transform Your Life</h2>
+            <img src="assets/images/your-logo.png" alt="NutirMinds Logo" class="logo-image">
+        </div>
+        <div class="background-image">
+            <img src="assets/images/your-background-image.jpg" alt="Fruits and Health">
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Table Section -->
+    <section>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Health Stats</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>Healthy</td>
+                </tr>
+                <tr>
+                    <td>Jane Doe</td>
+                    <td>Underweight</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</body>
+</html>
